@@ -15,7 +15,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div>
+    <div id="projects">
       <h2>Projets</h2>
       <div className="project-list">
         {projects.map((project) => (
@@ -23,6 +23,9 @@ const Projects = () => {
             <h3>{project.title}</h3>
             <img src={project.image} alt={project.title} />
             <p>{project.description}</p>
+            <a href={project.link} target="_blank">
+              {project.link}
+            </a>
           </div>
         ))}
       </div>

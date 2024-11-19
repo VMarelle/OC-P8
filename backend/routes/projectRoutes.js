@@ -12,7 +12,7 @@ router.get("/projects", (req, res) => {
 // Route POST pour ajouter un nouveau projet
 router.post("/projects", (req, res) => {
   const { id, title, image, description } = req.body;
-  const newProject = new Project(id, title, image, description);
+  const newProject = new Project(id, title, image, description, link);
   const createdProject = addProject(newProject);
   res.status(201).json(createdProject);
 });

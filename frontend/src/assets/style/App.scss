@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
+  color: #242038;
   a {
     text-decoration: none;
   }
@@ -18,49 +19,44 @@ body {
   h3 {
     font-family: "Playfair Display", serif;
     font-weight: bold;
+    cursor: default;
   }
   h1 {
-    font-size: 65pt;
+    font-size: 3.75rem;
   }
   h2 {
-    font-size: 45pt;
+    font-size: 2.813rem;
   }
   h3 {
-    font-size: 18pt;
+    font-size: 1.5rem;
   }
-}
-.App-header {
-  text-align: center;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  text-align: center;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 10s linear;
+  p {
+    font-size: 1rem;
+    cursor: default;
   }
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  a {
+    font-size: 1rem;
+    word-wrap: break-word;
   }
 }
 
 .section-info {
   display: flex;
   justify-content: space-around;
+  margin: 2.604vw;
 }
 
 .Projects {
-  margin: 30px;
+  margin: 1.563vw;
   h2 {
     text-align: center;
+  }
+}
+@media all and (max-width: 768px) {
+  body {
+  }
+  .section-info {
+    display: flex;
+    flex-direction: column;
   }
 }

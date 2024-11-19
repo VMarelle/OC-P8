@@ -1,8 +1,15 @@
+import "../assets/style/Presentation.scss";
+import pp from "../assets/image/PP.webp";
+
 function Presentation() {
   return (
-    <div className="presentation-card">
+    <div id="presentation" className="presentation-card">
       <h2>Présentation</h2>
-      <p>blabla</p>
+      <div className="card-image">
+        <img src={pp} alt="PP"></img>
+      </div>
+      <h3>Victor Marelle</h3>
+      <p>Étudiant en développement web</p>
     </div>
   );
 }

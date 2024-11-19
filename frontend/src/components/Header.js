@@ -1,5 +1,4 @@
 import "../assets/style/Header.scss";
-import imgHeader from "../assets/image/dev.jpg";
 
 function Header() {
   return (
@@ -7,19 +6,20 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <a>Présentation</a>
+            <a href="#presentation">Présentation</a>
           </li>
           <li>
-            <a>Compétence</a>
+            <a href="#skills">Compétences</a>
           </li>
           <li>
-            <a>Projets</a>
+            <a href="#projects">Projets</a>
           </li>
           <li>
-            <a>Contacts</a>
+            <a href="#contact">Contacts</a>
           </li>
         </ul>
       </nav>
+      <h1>Victor Marelle - Étudiant en Développement Web</h1>
     </header>
   );
 }

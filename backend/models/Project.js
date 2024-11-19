@@ -4,6 +4,7 @@ class Project {
     this.title = title;
     this.image = image;
     this.description = description;
+    this.link = link;
   }
 }
 
